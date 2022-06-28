@@ -4,7 +4,7 @@ class Database
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-git    private $db = "webshop-db";
+    private $db = "webshop-db";
 
     protected $conn;
 
