@@ -33,6 +33,11 @@ class Template
                 <nav class="navbar">
                     <a href="/ws/index.php">Home</a>
                     <a href="/ws/pages/products.php">Products</a>
+                    <?php if ($is_logged_in) : ?>
+                        <a href="/ws/pages/orders.php">Orders</a>
+                        <?php endif; ?>
+
+
                     <?php if (!$is_logged_in) : ?>
                         <a href="/ws/pages/login.php">Log in</a>
                         <a href="/ws/pages/register.php">Register</a>
@@ -40,6 +45,9 @@ class Template
                     <?php elseif ($is_admin) : ?>
                         <a href="/ws/pages/admin.php">Admin area</a>
                     <?php endif; ?>
+
+
+
                 </nav>
 
                 <div class="login-status">

@@ -1,7 +1,12 @@
 <?php
 require_once __DIR__ . '/../classes/Template.php';
+
+require_once __DIR__ . "/../classes/User.php";
+require_once __DIR__ . "/../classes/Order.php";
+
 require_once __DIR__ . '/../classes/ProductsDatabase.php';
 require_once __DIR__ . '/../classes/UsersDatabase.php';
+require_once __DIR__ . '/../classes/OrdersDatabase.php';
 
 $is_logged_in = isset($_SESSION['user']);
 $logged_in_user = $is_logged_in ? $_SESSION['user'] : null;
@@ -12,11 +17,16 @@ if (!$is_admin) {
     die('Access denied');
 }
 
-$prducts_db = new ProductsDatabase();
+$products_db = new ProductsDatabase();
 $users_db = new UsersDatabase();
+$orders_db = new OrdersDatabase();
+
 
 $users = $users_db->get_all();
-$products = $prducts_db->get_all();
+$products = $products_db->get_all();
+$orders = $orders_db->get_all_orders();
+
+
 
 Template::header("Welcome to the Admin area!"); ?>
 
@@ -47,12 +57,23 @@ Template::header("Welcome to the Admin area!"); ?>
 
         <br>
         <h3>Users</h3>
-
+        <br>
         <?php foreach ($users as $user) : ?>
             <p>
                 <a href="/ws/pages/admin-user.php?id=<?= $user->id ?>"><?= $user->username ?></a>
                 <span><?= $user->role ?></span>
             </p>
+        <?php endforeach; ?>
+        <br>
+        <h3>Orders</h3>
+        <br>
+        <?php foreach ($orders as $order) : ?>
+            <div>
+                <h5>
+                    <a href="admin-single-order.php?id=<?= $order->id ?>"># <?= $order->id ?> <?= $order->status ?></a>
+                </h5>
+            </div>
+
         <?php endforeach; ?>
         <br>
     </div>

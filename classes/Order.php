@@ -3,16 +3,16 @@
 class Order
 {
     public $id;
-    public $customer_id;
+    public $user_id;
     public $status;
     public $order_date;
 
-    public function __construct($customer_id, $status, $order_date, $id = 0)
+    public function __construct($user_id, $status, $order_date, $id = 0)
     {
         if ($id > 0) {
             $this->id = $id;
         }
-        $this->customer_id = $customer_id;
+        $this->user_id = $user_id;
         $this->status = $status;
         $this->order_date = $order_date;
     }
