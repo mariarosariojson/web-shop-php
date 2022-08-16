@@ -56,6 +56,25 @@ Template::header("Welcome to the Admin area!"); ?>
         <?php endforeach; ?>
 
         <br>
+
+        <h2>
+            Create new user
+        </h2>
+
+        <form action="/ws/scripts/post-register-user.php" method="post">
+            <input type="text" name="username" placeholder="Username"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="password" name="confirm-password" placeholder="Confirm password"><br>
+            <select>
+                <option value="" disabled selected>Role</option>
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+            </select>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+
+
         <h3>Users</h3>
         <br>
         <?php foreach ($users as $user) : ?>
