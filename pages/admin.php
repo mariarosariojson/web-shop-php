@@ -70,7 +70,7 @@ Template::header("Welcome to the Admin area!"); ?>
         <?php foreach ($orders as $order) : ?>
             <div>
                 <h5>
-                    <a href="admin-single-order.php?id=<?= $order->id ?>"># <?= $order->id ?> <?= $order->status ?></a>
+                    <a href="admin-single-order.php?id=<?= $order->id ?>">Order #<?= $order->id ?> [<?= $order->status ?>]</a>
                 </h5>
             </div>
 

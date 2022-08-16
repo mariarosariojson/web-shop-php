@@ -14,7 +14,8 @@ Template::header("Order {$_GET["id"]}", "");
 ?>
 
 <div>
-    <p>Id: <?= $order->id ?></p>
+    <p>ID: <?= $order->id ?></p>
+    <p>Customer ID: <?= $order->user_id ?></p>
     <p>Status: <?= $order->status ?></p>
     <p>Order date: <?= $order->order_date ?></p>
 </div>
