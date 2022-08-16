@@ -6,6 +6,7 @@ class Database
     private $pass = "root";
     private $db = "shop-db";
 
+
     protected $conn;
 
     public function __construct()
