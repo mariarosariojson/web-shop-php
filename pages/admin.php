@@ -80,10 +80,13 @@ Template::header("Welcome to the Admin area!"); ?>
         <?php foreach ($users as $user) : ?>
             <p>
                 <a href="/ws/pages/admin-user.php?id=<?= $user->id ?>"><?= $user->username ?></a>
-                <span><?= $user->role ?></span>
+                <span>[<?= $user->role ?>]</span>
             </p>
         <?php endforeach; ?>
         <br>
+
+
+
         <h3>Orders</h3>
         <br>
         <?php foreach ($orders as $order) : ?>
