@@ -61,12 +61,12 @@ Template::header("Welcome to the Admin area!"); ?>
             Create new user
         </h2>
 
-        <form action="/ws/scripts/post-register-user.php" method="post">
+        <form action="/ws/admin-scripts/post-create-user.php" method="post">
             <input type="text" name="username" placeholder="Username"><br>
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="confirm-password" placeholder="Confirm password"><br>
-            <select>
-                <option value="" disabled selected>Role</option>
+            <select name="role">
+                <option value="role" disabled selected>Role</option>
                 <option value="customer">Customer</option>
                 <option value="admin">Admin</option>
             </select>
