@@ -92,4 +92,16 @@ class OrdersDatabase extends Database
 
         return $order;
     }
+
+    //Update order
+    public function update_order($status, $id)
+    {
+        $query = "UPDATE orders SET `status` = ? WHERE id = ?";
+
+        $stmt = mysqli_prepare($this->conn, $query);
+
+        $stmt->bind_param("si", $status, $id);
+
+        return $stmt->execute();
+    }
 }
