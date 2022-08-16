@@ -78,8 +78,9 @@ Template::header("Welcome to the Admin area!"); ?>
         <h3>Users</h3>
         <br>
         <?php foreach ($users as $user) : ?>
+
             <p>
-                <a href="/ws/pages/admin-user.php?id=<?= $user->id ?>"><?= $user->username ?></a>
+                <a href="/ws/pages/admin-update-user.php?username=<?= $user->username ?>"><?= $user->username ?></a>
                 <span>[<?= $user->role ?>]</span>
             </p>
         <?php endforeach; ?>
