@@ -35,7 +35,7 @@ if (
 
 // felmedelande 
 if ($success) {
-    header("Location: /ws/pages/login.php");
+    header("Location: /ws/pages/login.php?register=success");
 } else {
     die('Error saving user');
 }
