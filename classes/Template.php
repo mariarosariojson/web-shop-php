@@ -34,8 +34,8 @@ class Template
                     <a href="/ws/index.php">Home</a>
                     <a href="/ws/pages/products.php">Products</a>
                     <?php if ($is_logged_in) : ?>
-                        <a href="/ws/pages/orders.php">Orders</a>
-                        <?php endif; ?>
+                        <a href="/ws/pages/orders.php">My orders</a>
+                    <?php endif; ?>
 
 
                     <?php if (!$is_logged_in) : ?>
