@@ -20,5 +20,30 @@ Template::header("Order {$_GET["id"]}", "");
     <p>Order date: <?= $order->order_date ?></p>
 </div>
 
+
+
+
+
+
+<div>
+    <?php if ($order->status == "sent") : ?>
+        <form action="/ws/admin-scripts/post-update-order.php" method="POST">
+            <label>Status: <?= $order->status ?></label>
+        </form>
+    <?php else : ?>
+        <form action="/ws/admin-scripts/post-update-order.php" method="POST">
+            <label>Mark as sent</label> <br>
+            <input type="hidden" name="id" value="<?= $order->id ?>">
+            <input type="checkbox" name="status">
+            <input type="submit" value="Send">
+        </form>
+    <?php endif ?>
+</div>
+
+
+
+
+
+
 <?php
 Template::footer();
