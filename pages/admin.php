@@ -91,9 +91,9 @@ Template::header("Welcome to the Admin area!"); ?>
         <br>
         <?php foreach ($orders as $order) : ?>
             <div>
-                <h5>
+                <p>
                     <a href="admin-single-order.php?id=<?= $order->id ?>">Order #<?= $order->id ?> [<?= $order->status ?>]</a>
-                </h5>
+                </p>
             </div>
 
         <?php endforeach; ?>
