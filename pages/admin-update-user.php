@@ -25,7 +25,7 @@ Template::header("Update user", "");
     <select name="role" id="role">
         <option value="role" selected disabled>Set role</option>
         <option value="admin">Admin</option>
-        <option value="customer">User</option>
+        <option value="customer">Customer</option>
     </select>
     <br><br>
     <input type="submit" value="Save">
