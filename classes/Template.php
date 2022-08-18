@@ -27,31 +27,32 @@ class Template
         </head>
 
         <body>
-            <h1 style="text-align: center;"><?= $title ?></h1>
-            <br>
+            <div class="topbanner">
+                <p>We offer free shipping on orders over $100!</p>
+            </div>
+            <div class="wrapper">
 
             <div class="header">
-                <nav class="navbar">
-                    <a href="/ws/index.php">Home</a>
-                    <a href="/ws/pages/products.php">Products</a>
-                    <?php if ($is_logged_in) : ?>
-                        <a href="/ws/pages/orders.php">My orders</a>
-                    <?php endif; ?>
+                <h1><?= $title ?></h1>
+            </div>
+            <nav class="navbar">
+                <a href="/ws/index.php">Home</a>
+                <a href="/ws/pages/products.php">Shop</a>
+                <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
+
+                <?php if ($is_logged_in) : ?>
+                    <a href="/ws/pages/orders.php">My orders</a>
+                <?php endif; ?>
 
 
-                    <?php if (!$is_logged_in) : ?>
-                        <a href="/ws/pages/login.php">Log in</a>
-                        <a href="/ws/pages/register.php">Register</a>
+                <?php if (!$is_logged_in) : ?>
+                    <a href="/ws/pages/login.php">Log in</a>
+                    <a href="/ws/pages/register.php">Register</a>
 
-                    <?php elseif ($is_admin) : ?>
-                        <a href="/ws/pages/admin.php">Admin area</a>
-                    <?php endif; ?>
+                <?php elseif ($is_admin) : ?>
+                    <a href="/ws/pages/admin.php">Admin area</a>
+                <?php endif; ?>
 
-
-
-                </nav>
-
-                <div class="login-status">
                     <?php if ($is_logged_in) : ?>
                         <p>
                             <b>Logged in as:</b>
@@ -60,11 +61,10 @@ class Template
                             <input type="submit" value="Log out">
                         </form>
                         </p>
-                    <?php endif; ?>
-                    <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
-                </div>
-            </div>
 
+                    <?php endif; ?>
+            </nav>
+            <br>
             <hr>
         <?php
     }
@@ -78,6 +78,8 @@ class Template
                 Copyright Maria Rosario 2022
             </footer>
             <script src="/ws/assets/script.js"></script>
+            </div>
+
         </body>
 
         </html>
