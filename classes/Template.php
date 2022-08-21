@@ -32,26 +32,26 @@ class Template
             </div>
             <div class="wrapper">
 
-            <div class="header">
-                <h1><?= $title ?></h1>
-            </div>
-            <nav class="navbar">
-                <a href="/ws/index.php">Home</a>
-                <a href="/ws/pages/products.php">Shop</a>
-                <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
+                <div class="header">
+                    <h1><?= $title ?></h1>
+                </div>
+                <nav class="navbar">
+                    <a href="/ws/index.php">Home</a>
+                    <a href="/ws/pages/products.php">Shop</a>
+                    <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
 
-                <?php if ($is_logged_in) : ?>
-                    <a href="/ws/pages/orders.php">My orders</a>
-                <?php endif; ?>
+                    <?php if ($is_logged_in) : ?>
+                        <a href="/ws/pages/orders.php">My orders</a>
+                    <?php endif; ?>
 
 
-                <?php if (!$is_logged_in) : ?>
-                    <a href="/ws/pages/login.php">Log in</a>
-                    <a href="/ws/pages/register.php">Register</a>
+                    <?php if (!$is_logged_in) : ?>
+                        <a href="/ws/pages/login.php">Log in</a>
+                        <a href="/ws/pages/register.php">Register</a>
 
-                <?php elseif ($is_admin) : ?>
-                    <a href="/ws/pages/admin.php">Admin area</a>
-                <?php endif; ?>
+                    <?php elseif ($is_admin) : ?>
+                        <a href="/ws/pages/admin.php">Admin area</a>
+                    <?php endif; ?>
 
                     <?php if ($is_logged_in) : ?>
                         <p>
@@ -63,26 +63,26 @@ class Template
                         </p>
 
                     <?php endif; ?>
-            </nav>
-            <br>
-            <hr>
-        <?php
-    }
+                </nav>
+                <br>
+                <hr>
+            <?php
+        }
 
-    public static function footer()
-    { ?>
-            <br>
-            <hr>
-            <br>
-            <footer class="footer-template">
-                Copyright Maria Rosario 2022
-            </footer>
-            <script src="/ws/assets/script.js"></script>
+        public static function footer()
+        { ?>
+                <br>
+                <hr>
+                <br>
+                <footer class="footer-template">
+                    Copyright Maria Rosario & Zarha Buske 2022
+                </footer>
+                <script src="/ws/assets/script.js"></script>
             </div>
 
         </body>
 
         </html>
 <?php
+        }
     }
-}
