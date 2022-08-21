@@ -32,63 +32,130 @@ Template::header("Welcome to the Admin area!"); ?>
 
 <br>
 <div class="admin-container">
+    <div class="product-section">
+        <div class="create">
+            <h2>Create product</h2>
+            <form action="/ws/admin-scripts/post-create-product.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="title" name="title" placeholder="Product title..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="price">Price</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="price" placeholder="Price.."><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="description" name="description" placeholder="Description.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="img">Image</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" name="image" accept="image/*"><br>
+                    </div>
+                </div>
 
-    <h2>
-        Create product
-    </h2>
-
-    <form action="/ws/admin-scripts/post-create-product.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="title" placeholder="Title"><br>
-        <textarea name="description" placeholder="Description"></textarea><br>
-        <input type="number" name="price" placeholder="Price"><br>
-        <input type="file" name="image" accept="image/*"><br>
-        <input type="submit" value="Save">
-    </form>
-
-    <div>
-        <h3>Products</h3>
-        <br>
-        <?php foreach ($products as $product) : ?>
-            <p>
-                <a href="/ws/pages/admin-product.php?id=<?= $product->id ?>">
-                    <?= $product->title ?></a>
-            </p>
-        <?php endforeach; ?>
-
-        <br>
-
-        <h2>
-            Create new user
-        </h2>
-
-        <form action="/ws/admin-scripts/post-create-user.php" method="post">
-            <input type="text" name="username" placeholder="Username"><br>
-            <input type="password" name="password" placeholder="Password"><br>
-            <input type="password" name="confirm-password" placeholder="Confirm password"><br>
-            <select name="role">
-                <option value="role" disabled selected>Role</option>
-                <option value="customer">Customer</option>
-                <option value="admin">Admin</option>
-            </select>
+                <div class="row">
+                    <input type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+        <div class="list">
+            <h2>Products</h2>
             <br>
-            <input type="submit" value="Save">
-        </form>
+            <?php foreach ($products as $product) : ?>
+                <ul>
+                    <li>
+                        <a href="/ws/pages/admin-product.php?id=<?= $product->id ?>">
+                            <?= $product->title ?></a>
+                    </li>
+                </ul>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <div class="user-section">
+        <div class="create">
+
+            <h2>Create new user</h2>
+            <form action="/ws/admin-scripts/post-create-user.php" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="password" placeholder="Password"><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Confirm password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="confirm-password" placeholder="Confirm password"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="role">Role</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="role" name="role">
+                            <option value="admin">Admin</option>
+                            <option value="customer">customer</option>
+                        </select>
+                    </div>
+                </div>
 
 
-        <h3>Users</h3>
-        <br>
-        <?php foreach ($users as $user) : ?>
+                <div class="row">
+                    <input type="submit" value="Save">
+                </div>
+            </form>
 
-            <p>
-                <a href="/ws/pages/admin-update-user.php?username=<?= $user->username ?>"><?= $user->username ?></a>
-                <span>[<?= $user->role ?>]</span>
-            </p>
-        <?php endforeach; ?>
-        <br>
+        </div>
+        <div class="list">
 
+            <h2>Users</h2>
+            <br>
+            <?php foreach ($users as $user) : ?>
 
+                <ul>
+                    <li>
+                        <a href="/ws/pages/admin-update-user.php?username=<?= $user->username ?>"><?= $user->username ?></a>
+                        <span>[<?= $user->role ?>]</span>
+                    </li>
 
-        <h3>Orders</h3>
+                </ul>
+            <?php endforeach; ?>
+            <br>
+        </div>
+    </div>
+    <div class="orders-section ">
+
+        <h2>Orders</h2>
         <br>
         <?php foreach ($orders as $order) : ?>
             <div>
@@ -98,8 +165,8 @@ Template::header("Welcome to the Admin area!"); ?>
             </div>
 
         <?php endforeach; ?>
-        <br>
     </div>
+    <br>
 </div>
 
 <?php
