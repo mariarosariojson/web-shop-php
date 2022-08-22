@@ -33,16 +33,5 @@ if (isset($_GET['error']) && $_GET['error'] == 'invalid_credentials') : ?>
         </div>
     </form>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 <?php
 Template::footer();
