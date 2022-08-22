@@ -74,8 +74,6 @@ class Template
         public static function footer()
         { ?>
                 <br>
-                <hr>
-                <br>
                 <footer class="footer-template">
                     Copyright Maria Rosario & Zarha Buske 2022
                 </footer>
