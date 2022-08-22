@@ -1,5 +1,5 @@
 <?php
-// http://localhost:8888/ws/
+// http://localhost:8081/ws/
 require_once __DIR__ . "/classes/Template.php";
 
 Template::header('MRJ Web Shop');

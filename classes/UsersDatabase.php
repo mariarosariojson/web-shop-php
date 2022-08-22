@@ -9,10 +9,15 @@ class UsersDatabase extends Database
     public function get_one_by_username($username)
     {
         $query = "SELECT * FROM users WHERE username = ?";
+
         $stmt = mysqli_prepare($this->conn, $query);
+
         $stmt->bind_param('s', $username);
+
         $stmt->execute();
+
         $result = $stmt->get_result();
+        
         $db_user = mysqli_fetch_assoc($result);
 
         $user = null;
@@ -46,6 +51,30 @@ class UsersDatabase extends Database
         $success = $stmt->execute();
         return $success;
     }
-    // update
+    // update    
+    public function update($role, $id)
+    {
+        $query = "UPDATE users SET `role` = ? WHERE id = ?";
+
+        $stmt = mysqli_prepare($this->conn, $query);
+
+        $stmt->bind_param("si", $role, $id);
+
+        $success = $stmt->execute();
+
+        return $success;
+    }
     // delete
+    public function delete($id)
+    {
+        $query = "DELETE FROM users WHERE id = ?";
+
+        $stmt = mysqli_prepare($this->conn, $query);
+
+        $stmt->bind_param("i", $id);
+
+        $success = $stmt->execute();
+
+        return $success;
+    }
 }
