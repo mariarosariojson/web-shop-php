@@ -1,3 +1,4 @@
+/* Base styling */
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -10,8 +11,8 @@ html {
 body {
 	background-color: white;
 	max-width: 70%;
+	min-height: 100vh;
 	margin: 50px auto;
-	/* padding: 20px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,6 +20,70 @@ body {
 .wrapper {
 	width: 80%;
 }
+
+/* Base form & input styling */
+form {
+	margin: 20px 0px;
+}
+input[type="text"],
+input[type="file"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+label {
+	padding: 12px 12px 12px 0px;
+	display: inline-block;
+}
+.col-25 > label {
+	padding-left: 15px;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.col-25,
+	.col-75,
+	input[type="submit"] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+/* Base submit btn styling */
+input[type="submit"] {
+	background-color: #6fb3b8;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #badfe7;
+}
+
+/* Topbanner styling */
 .topbanner {
 	background-color: #badfe7;
 	width: 100%;
@@ -29,6 +94,8 @@ body {
 	padding: 5px;
 	color: white;
 }
+
+/* Header styling */
 .header {
 	height: 5.5rem;
 	width: 100%;
@@ -54,12 +121,6 @@ body {
 nav > a {
 	text-decoration: none;
 }
-
-/* Icons styling */
-.fa {
-	transform: scale(1.3);
-}
-
 .login-status {
 	display: flex;
 	flex-direction: row;
@@ -69,38 +130,9 @@ nav > a {
 	align-items: center;
 }
 
-/*Base form & input styling */
-input[type="text"],
-input[type="file"],
-input[type="number"],
-input[type="password"],
-select,
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: vertical;
-}
-label {
-	padding: 12px 12px 12px 0px;
-	display: inline-block;
-}
-form {
-	margin: 20px 0px;
-}
-
-/*Base submit btn styling*/
-input[type="submit"] {
-	background-color: #6fb3b8;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-input[type="submit"]:hover {
-	background-color: #badfe7;
+/* Icons styling */
+.fa {
+	transform: scale(1.3);
 }
 
 /* Admin page styling */
@@ -153,29 +185,7 @@ input[type="submit"]:hover {
 .admin-container input[type="submit"] {
 	float: right;
 }
-.col-25 {
-	float: left;
-	width: 25%;
-	margin-top: 6px;
-}
-.col-75 {
-	float: left;
-	width: 75%;
-	margin-top: 6px;
-}
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-@media screen and (max-width: 600px) {
-	.col-25,
-	.col-75,
-	input[type="submit"] {
-		width: 100%;
-		margin-top: 0;
-	}
-}
+
 /*Update product styling*/
 .col-75 > input[type="submit"] {
 	margin-top: 10px;
@@ -186,7 +196,10 @@ textarea {
 	width: 80%;
 }
 
-/* Login styling */
+/* Login page styling */
+#success-msg {
+	text-align: center;
+}
 .invalid-credentials {
 	color: red;
 	text-align: center;
@@ -204,15 +217,12 @@ textarea {
 	margin-top: 10px;
 	font-size: 1rem;
 }
-.col-25 > label {
-	padding-left: 15px;
-}
 .login-container input[type="text"],
 input[type="password"] {
 	width: 80%;
 }
 
-/* Register styling */
+/* Register page styling */
 .register-container {
 	display: flex;
 	flex-direction: column;
@@ -246,5 +256,8 @@ input[type="password"] {
 
 /*Footer styling*/
 footer {
+	width: 100%;
+	height: 30px;
 	text-align: center;
+	margin-top: auto;
 }
