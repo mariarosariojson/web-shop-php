@@ -24,6 +24,9 @@ class Template
 
             <title> <?= $title ?> - My Web Shop</title>
             <link rel="stylesheet" href="/ws/assets/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         </head>
 
         <body>
@@ -38,10 +41,10 @@ class Template
                 <nav class="navbar">
                     <a href="/ws/index.php">Home</a>
                     <a href="/ws/pages/products.php">Shop</a>
-                    <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
+                    <a href="/ws/pages/cart.php"><i class="fa fa-shopping-cart"></i> (<?= $cart_count ?>)</a>
 
                     <?php if ($is_logged_in) : ?>
-                        <a href="/ws/pages/orders.php">My orders</a>
+                        <a href="/ws/pages/orders.php">My Orders </a>
                     <?php endif; ?>
 
 
@@ -65,7 +68,6 @@ class Template
                     <?php endif; ?>
                 </nav>
                 <br>
-                <hr>
             <?php
         }
 
