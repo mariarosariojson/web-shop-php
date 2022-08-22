@@ -4,11 +4,9 @@
 	color: black;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 html {
 	background-color: whitesmoke;
 }
-
 body {
 	background-color: white;
 	max-width: 70%;
@@ -18,11 +16,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-
 .wrapper {
 	width: 80%;
 }
-
 .topbanner {
 	background-color: #badfe7;
 	width: 100%;
@@ -33,7 +29,6 @@ body {
 	padding: 5px;
 	color: white;
 }
-
 .header {
 	height: 5.5rem;
 	width: 100%;
@@ -87,7 +82,6 @@ textarea {
 	border-radius: 4px;
 	resize: vertical;
 }
-
 label {
 	padding: 12px 12px 12px 0px;
 	display: inline-block;
@@ -105,7 +99,6 @@ input[type="submit"] {
 	border-radius: 4px;
 	cursor: pointer;
 }
-
 input[type="submit"]:hover {
 	background-color: #badfe7;
 }
@@ -147,7 +140,6 @@ input[type="submit"]:hover {
 	flex-direction: column;
 	background-color: white;
 }
-
 .admin-container input[type="text"] {
 	padding: 10px;
 }
@@ -161,25 +153,21 @@ input[type="submit"]:hover {
 .admin-container input[type="submit"] {
 	float: right;
 }
-
 .col-25 {
 	float: left;
 	width: 25%;
 	margin-top: 6px;
 }
-
 .col-75 {
 	float: left;
 	width: 75%;
 	margin-top: 6px;
 }
-
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
 @media screen and (max-width: 600px) {
 	.col-25,
 	.col-75,
@@ -188,13 +176,21 @@ input[type="submit"]:hover {
 		margin-top: 0;
 	}
 }
+/*Update product styling*/
+.col-75 > input[type="submit"] {
+	margin-top: 10px;
+	font-size: 1rem;
+}
+.admin-product-container input,
+textarea {
+	width: 80%;
+}
 
 /* Login styling */
 .invalid-credentials {
 	color: red;
 	text-align: center;
 }
-
 .login-container {
 	display: flex;
 	flex-direction: column;
@@ -203,17 +199,14 @@ input[type="submit"]:hover {
 	margin-top: 20px;
 	margin: 0 auto;
 }
-
 .login-container input[type="submit"] {
 	width: 80%;
 	margin-top: 10px;
 	font-size: 1rem;
 }
-
 .col-25 > label {
 	padding-left: 15px;
 }
-
 .login-container input[type="text"],
 input[type="password"] {
 	width: 80%;
@@ -228,13 +221,11 @@ input[type="password"] {
 	margin-top: 20px;
 	margin: 0 auto;
 }
-
 .register-container input[type="submit"] {
 	width: 80%;
 	margin-top: 10px;
 	font-size: 1rem;
 }
-
 .register-container input[type="text"],
 input[type="password"] {
 	width: 80%;
@@ -246,7 +237,6 @@ input[type="password"] {
 	flex-direction: row;
 	width: 15rem;
 }
-
 .product {
 	width: 15rem;
 	height: 20rem;
@@ -254,6 +244,7 @@ input[type="password"] {
 	padding: 1.3rem;
 }
 
+/*Footer styling*/
 footer {
 	text-align: center;
 }
