@@ -14,11 +14,35 @@ if (isset($_GET['error']) && $_GET['error'] == 'invalid_credentials') : ?>
 
 <div class="login-container">
     <form action="/ws/scripts/post-login.php" method="post">
-        <input type="text" name="username" placeholder="Username"><br>
-        <input type="password" name="password" placeholder="Password"> <br>
-        <input type="submit" value="Login">
+        <div class="row">
+            <div class="col-25">
+                <label for="username">Username</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="username" placeholder="Username.."><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+                <input type="password" name="password" placeholder="Password.."> <br>
+                <input type="submit" value="Login">
+            </div>
+        </div>
     </form>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 <?php
 Template::footer();
