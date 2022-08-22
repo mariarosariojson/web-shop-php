@@ -2,19 +2,27 @@
 // http://localhost:8081/ws/
 require_once __DIR__ . "/classes/Template.php";
 
-Template::header('MRJ Web Shop');
+
 ?>
 
+<?php
+Template::header('a Clothing Store');
+?>
+<div class="header-img"><img src="/WS/assets/img/header-WS.jpg" alt="" srcset=""></div>
 
-<br>
-<h2>About us</h2>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus reiciendis dicta quas ab quaerat nobis vel, obcaecati non laudantium ut quisquam quasi mollitia commodi quae! Ea tempore laboriosam cupiditate.
-</p>
-<br>
+<h2 class="sub-header-text">New Arrivals</h2>
+
+<div class="new-arrivals-img">
+
+    <div class="img-small">
+        <img class="products-img-index" src="assets/uploads/1655310046.jpg" width="350px" height="300px">
 
 
-
+    </div>
+    <div class="img-small"> <img class="products-img-index" src="assets/uploads/1655310046.jpg" width="350px" height="300px"></div>
+    <div class="img-small"> <img class="products-img-index" src="assets/uploads/1655310046.jpg" width="350px" height="300px"></div>
+    <div class="img-small"> <img class="products-img-index" src="assets/uploads/1655310046.jpg" width="350px" height="300px"></div>
+</div>
 </div>
 <?php
 Template::footer();

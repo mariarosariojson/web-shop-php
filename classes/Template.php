@@ -30,7 +30,6 @@ class Template
         <body>
             <h1 style="text-align: center;"><?= $title ?></h1>
             <br>
-
             <div class="header">
                 <nav class="navbar">
                     <a href="/ws/index.php">Home</a>
@@ -67,7 +66,8 @@ class Template
                 </div>
             </div>
 
-            <hr>
+
+            
         <?php
     }
 
