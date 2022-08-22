@@ -73,11 +73,12 @@ class Template
 
         public static function footer()
         { ?>
-                <br>
-                <footer class="footer-template">
-                    Copyright Maria Rosario & Zarha Buske 2022
-                </footer>
-                <script src="/ws/assets/script.js"></script>
+            </div>
+
+            <footer class="footer-template">
+                Copyright Maria Rosario & Zarha Buske 2022
+            </footer>
+            <script src="/ws/assets/script.js"></script>
             </div>
 
         </body>
