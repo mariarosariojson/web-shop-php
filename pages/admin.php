@@ -124,7 +124,7 @@ Template::header("Welcome to the Admin area!"); ?>
                     <div class="col-75">
                         <select id="role" name="role">
                             <option value="admin">Admin</option>
-                            <option value="customer">customer</option>
+                            <option value="customer">Customer</option>
                         </select>
                     </div>
                 </div>
