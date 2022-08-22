@@ -97,7 +97,7 @@ Template::header("Welcome to the Admin area!"); ?>
                         <label for="username">Username</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="username" name="username" placeholder="Username">
+                        <input type="text" id="username" name="username" placeholder="Username..">
                     </div>
                 </div>
                 <div class="row">
@@ -105,7 +105,7 @@ Template::header("Welcome to the Admin area!"); ?>
                         <label for="password">Password</label>
                     </div>
                     <div class="col-75">
-                        <input type="password" name="password" placeholder="Password"><br>
+                        <input type="password" name="password" placeholder="Password.."><br>
                     </div>
                 </div>
                 <div class="row">
@@ -113,7 +113,7 @@ Template::header("Welcome to the Admin area!"); ?>
                         <label for="password">Confirm password</label>
                     </div>
                     <div class="col-75">
-                        <input type="password" name="confirm-password" placeholder="Confirm password"><br>
+                        <input type="password" name="confirm-password" placeholder="Confirm password.."><br>
                     </div>
                 </div>
 
