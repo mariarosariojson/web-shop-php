@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/User.php";
 require_once __DIR__ . "/Models.php";
+
 session_start();
 
 class Template
@@ -36,7 +37,8 @@ class Template
                     <a href="/ws/pages/products.php">Products</a>
                     <?php if (!$is_logged_in) : ?>
                         <a href="/ws/pages/login.php">Log in</a>
-                        <a href="/ws/pages/register.php">Register</a>
+
+                        <a href="/WS/pages/register.php">Register</a>
 
                     <?php elseif ($is_admin) : ?>
                         <a href="/ws/pages/admin.php">Admin area</a>
