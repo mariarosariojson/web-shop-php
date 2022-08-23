@@ -51,8 +51,15 @@ form {
   justify-self: flex-end;
 }
 
-form .logout-btn {
-  padding: 0px;
+.logout-btn {
+  margin-top: auto;
+}
+
+.logout-button {
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: whitesmoke;
+  font-weight: 600;
 }
 
 .invalid-credentials {

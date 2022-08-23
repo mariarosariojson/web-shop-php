@@ -58,7 +58,7 @@ class Template
                     <?php endif; ?>
                     <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
                     <form class="logout-btn" action="/ws/scripts/post-logout.php" method="post">
-                        <input type="submit" value="Log out">
+                        <input class="logout-button" type="submit" value="Log out">
                     </form>
                 </div>
             </div>
