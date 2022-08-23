@@ -8,6 +8,7 @@ $products_db = new ProductsDatabase();
 $products = $products_db->get_all();
 $products = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 
+
 Template::header('a Clothing Store'); ?>
 
 <h2 class="sub-header-text">Cart</h2>
@@ -22,16 +23,38 @@ Template::header('a Clothing Store'); ?>
 
     <?php elseif ($_SESSION["cart"]) : ?>
 
-        <form action="/ws/scripts/post-place-order.php" method="post">
-            <?php foreach ($products as $product) : ?>
-                <div class="product">
-                    <input type="hidden" name="id" value="<?= $product->id ?>">
-                    <img src="<?= $product->img_url ?>" alt="product-img" width="50px" height="50px"><br>
-                    <h3><?= $product->title ?></h3>
-                    <p><?= $product->price ?> kr</p>
-                </div>
-            <?php endforeach ?>
 
+        <form class="products-cart-form" action="/ws/scripts/post-place-order.php" method="post">
+            <div class="cart-title">
+                <p>Product</p>
+                <p>Qty</p>
+                <p>Price</p>
+                <p>Total</p>
+            </div>
+            <?php foreach ($products as $product) : ?>
+                <hr>
+                <br>
+                <div class="cart">
+
+                    <div class="products-cart">
+                        <input type="hidden" name="id" value="<?= $product->id ?>">
+                        <img src="<?= $product->img_url ?>" alt="product-img">
+                    </div>
+
+                    <div class="cart-product_info">
+                        <h3><?= $product->title ?></h3>
+                        <p><input class="cart-qty" type="number" placeholder="0"></p>
+                        <p><?= $product->price ?> kr</p>
+                        <p><?= $product->price ?> kr</p>
+                    </div>
+                </div>
+                <br>
+
+
+
+
+            <?php endforeach ?>
+            <br>
             <input class="cart-button" type="submit" value="Place order">
         </form>
     <?php endif ?>
