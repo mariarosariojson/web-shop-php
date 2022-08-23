@@ -37,7 +37,7 @@ Template::header('a Clothing Store');
         <p>
         <h1 class="about-header">About us text</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore perspiciatis magnam delectus nulla, inventore iusto, alias ab asperiores qui eaque soluta doloremque? Animi nam expedita incidunt illum nulla quaerat!</p>
-        <button>Read More</button>
+        <button class="about-button">Read More</button>
     </div>
     <div class="about-section-picture"><img class="products-img-index" src="assets/img/WS_7.jpg" width="100%"> </div>
 </div>

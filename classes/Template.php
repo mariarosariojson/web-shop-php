@@ -25,6 +25,9 @@ class Template
 
             <title> <?= $title ?> - My Web Shop</title>
             <link rel="stylesheet" href="/ws/assets/style.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            </style>
         </head>
 
         <body>

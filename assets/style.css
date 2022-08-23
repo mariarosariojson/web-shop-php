@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #69331a;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -121,9 +122,10 @@ form {
   padding: 6rem 1rem 1rem 1rem;
   justify-content: space-between;
   text-align: right;
+  border: 0.01rem solid #69331a;
 }
 
-.about-section-text button {
+.about-button {
   width: 200px;
   border: 0px;
   background-color: #69331a;
@@ -154,6 +156,48 @@ form {
   height: 20rem;
   border: solid 0.05rem grey;
   padding: 1.3rem;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 2rem;
+}
+
+.cart-empty-text {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.back-button {
+  width: 200px;
+  border: 0px;
+  background-color: #69331a;
+  color: whitesmoke;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 3rem 0rem 10rem 0rem;
+}
+
+.back-button:hover {
+  background-color: #451600;
+}
+
+.cart-button {
+  display: flex;
+  width: 140px;
+  border: 0px;
+  background-color: #69331a;
+  color: whitesmoke;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: auto;
+}
+.cart-button:hover {
+  background-color: #451600;
+}
+
+.back-button-form {
+  margin: 0 auto;
 }
 
 footer {
