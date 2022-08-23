@@ -7,7 +7,7 @@
 
 body {
   background-color: white;
-  padding: 5rem;
+  padding: 3rem;
   margin: auto;
 }
 
@@ -22,26 +22,37 @@ form {
   justify-content: space-between;
 }
 
-.navbar {
+.navbar,
+.login-status {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 500px;
   height: 2rem;
   justify-content: space-evenly;
   justify-self: center;
 }
 
-.login-status {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  justify-content: center;
-  justify-self: center;
+.navbar a,
+.login-status,
+.login-status a {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 600;
 }
 
-.logout-btn {
-  display: inline;
-  flex-direction: row;
+.navbar a:hover,
+.login-status a:hover {
+  opacity: 0.6;
+}
+
+.login-status {
+  width: 350px;
+  justify-content: space-between;
+  justify-self: flex-end;
+}
+
+form .logout-btn {
+  padding: 0px;
 }
 
 .invalid-credentials {
@@ -53,13 +64,16 @@ form {
   height: 37rem;
   background-color: rgb(239, 239, 239);
   overflow: hidden;
+  margin: 0.5rem 0rem 7rem 0rem;
+  border-radius: 3px;
 }
+
 .header-img img {
   width: 100%;
 }
 
 .sub-header-text {
-  margin-top: 4rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -67,18 +81,59 @@ form {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .img-small {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 15rem;
-  height: 15rem;
+  width: 17rem;
+  height: 17rem;
   background-color: rgb(238, 238, 238);
   margin-top: 1rem;
   overflow: hidden;
+  border-radius: 3px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+
+.about-section-text {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 25rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  padding: 6rem 1rem 1rem 1rem;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.about-section-text button {
+  width: 200px;
+  border: 0px;
+  background-color: #69331a;
+  color: whitesmoke;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: auto;
+}
+
+.about-section-picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  height: 25rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .products-container {

@@ -29,7 +29,7 @@ class Template
 
         <body>
             <h1 style="text-align: center;"><?= $title ?></h1>
-            <br>
+            <br><br>
             <div class="header">
                 <nav class="navbar">
                     <a href="/ws/index.php">Home</a>
@@ -47,9 +47,6 @@ class Template
                     <?php elseif ($is_admin) : ?>
                         <a href="/ws/pages/admin.php">Admin area</a>
                     <?php endif; ?>
-
-
-
                 </nav>
 
                 <div class="login-status">
@@ -57,17 +54,17 @@ class Template
                         <p>
                             <b>Logged in as:</b>
                             <?= $logged_in_user->username ?>
-                        <form class="logout-btn" action="/ws/scripts/post-logout.php" method="post">
-                            <input type="submit" value="Log out">
-                        </form>
                         </p>
                     <?php endif; ?>
                     <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
+                    <form class="logout-btn" action="/ws/scripts/post-logout.php" method="post">
+                        <input type="submit" value="Log out">
+                    </form>
                 </div>
             </div>
 
 
-            
+
         <?php
     }
 
