@@ -11,7 +11,7 @@ Template::header('a Clothing Store');
 <div class="header-img"><img src="/WS/assets/img/header-WS.jpg" alt="" srcset=""></div>
 
 
-<h2 class="sub-header-text">new arrivals.</h2>
+<h2 class="sub-header-text">New arrivals</h2>
 
 <div class="new-arrivals-img">
 

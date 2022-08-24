@@ -10,16 +10,19 @@ $products = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 
 
 Template::header('a Clothing Store'); ?>
-
 <h2 class="sub-header-text">Cart</h2>
 
 <div class="cart-container">
     <?php if (!$products) : ?>
-        <h3 class="cart-empty-text">Your cart is empty</h3>
 
-        <form class="back-button-form" action="http://localhost:8888/ws/index.php">
-            <input class="back-button" type="submit" value="Return to Store" />
-        </form>
+        <div class="empty-cart">
+
+            <h3 class="cart-empty-text">Your cart is empty</h3>
+
+            <form class="back-button-form" action="http://localhost:8888/ws/index.php">
+                <input class="back-button" type="submit" value="Return to Store" />
+            </form>
+        </div>
 
     <?php elseif ($_SESSION["cart"]) : ?>
 
@@ -50,11 +53,9 @@ Template::header('a Clothing Store'); ?>
                 </div>
                 <br>
 
-
-
-
             <?php endforeach ?>
             <br>
+            <p class="cart-total">Total: kr</p>
             <input class="cart-button" type="submit" value="Place order">
         </form>
     <?php endif ?>

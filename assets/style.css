@@ -27,18 +27,20 @@ form {
 .login-status {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 40rem;
   height: 2rem;
   justify-content: space-evenly;
   justify-self: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-size: smaller;
 }
 
 .navbar a,
 .login-status,
 .login-status a {
   text-decoration: none;
-  font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navbar a:hover,
@@ -46,8 +48,12 @@ form {
   opacity: 0.6;
 }
 
+.fa-basket-shopping-simple {
+  color: #451600;
+}
+
 .login-status {
-  width: 350px;
+  width: 25rem;
   justify-content: space-between;
   justify-self: flex-end;
 }
@@ -83,6 +89,7 @@ form {
 .sub-header-text {
   margin-bottom: 1rem;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .new-arrivals-img {
@@ -123,6 +130,7 @@ form {
   justify-content: space-between;
   text-align: right;
   border: 0.01rem solid #69331a;
+  letter-spacing: 0.1px;
 }
 
 .about-button {
@@ -162,7 +170,7 @@ form {
   width: 90%;
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 3rem;
   margin: 0 auto;
 }
 
@@ -184,18 +192,42 @@ form {
 }
 
 .cart {
-  width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   margin-right: auto;
   align-items: center;
 }
 
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .cart-empty-text {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 10rem;
+}
+
+.back-button-form {
+  margin: 0 auto;
+}
+.back-button {
+  width: 8rem;
+  border: 0px;
+  background-color: #69331a;
+  color: whitesmoke;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.back-button:hover {
+  background-color: #451600;
 }
 
 .cart-product_info {
@@ -216,23 +248,10 @@ form {
 .cart-title {
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 94%;
   justify-content: space-between;
   margin-left: auto;
   padding: 0.5rem;
-}
-
-.back-button {
-  width: 200px;
-  border: 0px;
-  background-color: #69331a;
-  color: whitesmoke;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 3rem 0rem 10rem 0rem;
-}
-
-.back-button:hover {
-  background-color: #451600;
 }
 
 .cart-button {
@@ -248,8 +267,10 @@ form {
   background-color: #451600;
 }
 
-.back-button-form {
-  margin: 0 auto;
+.cart-total {
+  display: flex;
+  margin-left: auto;
+  padding: 1rem;
 }
 
 footer {

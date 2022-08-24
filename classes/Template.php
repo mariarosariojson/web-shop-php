@@ -59,7 +59,8 @@ class Template
                             <?= $logged_in_user->username ?>
                         </p>
                     <?php endif; ?>
-                    <a href="/ws/pages/cart.php">Cart (<?= $cart_count ?>)</a>
+                    <a href="/ws/pages/cart.php">Cart / <?= $cart_count ?></a>
+
                     <form class="logout-btn" action="/ws/scripts/post-logout.php" method="post">
                         <input class="logout-button" type="submit" value="Log out">
                     </form>
