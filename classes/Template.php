@@ -27,6 +27,8 @@ class Template
             <link rel="stylesheet" href="/ws/assets/style.css">
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+                @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto&display=swap');
             </style>
         </head>
 
