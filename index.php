@@ -6,7 +6,7 @@ require_once __DIR__ . "/classes/Template.php";
 ?>
 
 <?php
-Template::header('a Clothing Store');
+Template::header('MAZA');
 ?>
 <div class="header-img"><img src="/WS/assets/img/header-WS.jpg" alt="" srcset=""></div>
 
