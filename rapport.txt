@@ -2,7 +2,7 @@ RAPPORT
     1. Vad är det för webbutik?
          a. Namn 
          b. Vad den säljer
-       Svar:  
+       Svar: Vår webshop heter MAZA och vi säljer kläder.
 
     2. Vilka har bidragit i er grupp?
        Svar: Maria Rosario och Zarha Buske
@@ -16,4 +16,4 @@ RAPPORT
 
     4. Hur utmanande var uppgiften? 
         (1–10 där 1 är ”för enkel” och 10 är ”omöjlig, vi klarade den inte”)
-        
+        Svar: Vi tycker att denna uppgift var lagom så vi sätter en 5a.
