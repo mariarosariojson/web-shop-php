@@ -39,7 +39,12 @@ Template::header('a Clothing Store');
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore perspiciatis magnam delectus nulla, inventore iusto, alias ab asperiores qui eaque soluta doloremque? Animi nam expedita incidunt illum nulla quaerat!</p>
         <button class="about-button">Read More</button>
     </div>
-    <div class="about-section-picture"><img class="products-img-index" src="assets/img/WS_7.jpg" width="100%"> </div>
+
+    <div class="about-section-img"><img class="products-img-index" src="assets/img/WS_7.jpg" width="100%"> </div>
+</div>
+
+<div class="hero-img-section">
+    <img class="hero-img" src="assets/img/WS_8.jpg" width="100%">
 </div>
 
 <?php
