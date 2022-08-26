@@ -22,7 +22,7 @@ class Template
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <title> <?= $title ?> - My Web Shop</title>
+            <title> <?= $title ?> - Start</title>
             <link rel="stylesheet" href="/ws/assets/style.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -50,7 +50,8 @@ class Template
 
                     <?php if (!$is_logged_in) : ?>
                         <a href="/ws/pages/login.php">Log in</a>
-                        <a href="/ws/pages/register.php">Register</a>
+
+                        <a href="/WS/pages/register.php">Register</a>
 
                     <?php elseif ($is_admin) : ?>
                         <a href="/ws/pages/admin.php">Admin area</a>
