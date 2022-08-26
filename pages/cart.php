@@ -41,7 +41,7 @@ Template::header('MAZA - Cart'); ?>
 
                     <div class="products-cart">
                         <input type="hidden" name="id" value="<?= $product->id ?>">
-                        <img src="<?= $product->img_url ?>" alt="product-img">
+                        <img class="products-cart-img" src="<?= $product->img_url ?>" alt="product-img">
                     </div>
 
                     <div class="cart-product_info">

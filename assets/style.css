@@ -249,12 +249,13 @@ nav > a {
   height: 11rem;
   object-fit: cover;
 }
+
 .product-info {
   margin-top: -1.3rem;
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   width: 100%;
   height: 11rem;
 }
@@ -262,6 +263,7 @@ nav > a {
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .buy-btn {
   display: flex;
   background-color: #451600;
@@ -287,17 +289,22 @@ nav > a {
   flex-direction: column;
   width: 100%;
 }
+
 .products-cart {
   display: flex;
   flex-direction: column;
   width: 8rem;
   height: 8rem;
-  border: 0.01rem solid rgb(109, 109, 109);
   border-radius: 3px;
-  justify-content: center;
   margin: 1rem;
   overflow: hidden;
 }
+
+.products-cart-img {
+  object-fit: contain;
+  height: 100%;
+}
+
 .cart {
   display: flex;
   flex-direction: row;
@@ -341,7 +348,7 @@ nav > a {
   align-items: center;
 }
 .cart-qty {
-  width: 3rem;
+  width: 2rem;
   padding: 0.3rem;
   margin: 0.2rem;
 }
@@ -361,6 +368,7 @@ nav > a {
   color: whitesmoke;
   padding: 1rem 2rem 1rem 2rem;
   margin-left: auto;
+  justify-content: center;
 }
 .cart-button:hover {
   background-color: #451600;
