@@ -3,8 +3,8 @@ class Database
 {
     private $host = "localhost";
     private $user = "root";
-    private $pass = "";
-    private $db = "webshop-db";
+    private $pass = "root";
+    private $db = "shop2-db";
 
 
     protected $conn;
