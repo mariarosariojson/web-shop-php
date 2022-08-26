@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/../classes/Template.php";
 
-Template::header("Login");
+Template::header("MAZA - Login");
 if (isset($_GET['register']) && $_GET['register'] == 'success') {
     echo '<h2 id="success-msg">User created, please log in!</h2>';
 }

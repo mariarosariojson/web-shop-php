@@ -9,7 +9,7 @@ $products = $products_db->get_all();
 $products = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 
 
-Template::header('a Clothing Store'); ?>
+Template::header('MAZA - Cart'); ?>
 <h2 class="sub-header-text">Cart</h2>
 
 <div class="cart-container">

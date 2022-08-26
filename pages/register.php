@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../classes/Template.php';
 
-Template::header("Register");
+Template::header("MAZA - Register");
 ?>
 <div class="register-container">
     <form action="/ws/scripts/post-register-user.php" method="post">
