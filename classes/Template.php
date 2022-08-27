@@ -40,9 +40,9 @@ class Template
                     <h1><?= $title ?></h1>
                 </div>
                 <nav class="navbar">
+                    <a href="/ws/pages/cart.php"><i class="fa fa-shopping-cart"></i> (<?= $cart_count ?>)</a>
                     <a href="/ws/index.php">Home</a>
                     <a href="/ws/pages/products.php">Shop</a>
-                    <a href="/ws/pages/cart.php"><i class="fa fa-shopping-cart"></i> (<?= $cart_count ?>)</a>
 
                     <?php if ($is_logged_in) : ?>
                         <a href="/ws/pages/orders.php">My Orders </a>

@@ -1,8 +1,6 @@
 <?php
 // http://localhost:8081/ws/
 require_once __DIR__ . "/classes/Template.php";
-
-
 ?>
 
 <?php
@@ -16,11 +14,11 @@ Template::header('MAZA');
 <div class="new-arrivals-img">
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/WS_0.jpg" width="100%">
+        <img class="products-img-index" src="assets/img/jacket.jpg" width="100%">
     </div>
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/WS_2.jpg" width="100%">
+        <img class="products-img-index" src="assets/img/tshirt.jpg" width="100%">
     </div>
 
     <div class="img-small">
@@ -28,7 +26,7 @@ Template::header('MAZA');
     </div>
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/WS_4.jpg" height="100%">
+        <img class="products-img-index" src="assets/img/pants.jpg" height="100%">
     </div>
 </div>
 
