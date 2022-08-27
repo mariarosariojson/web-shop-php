@@ -219,7 +219,7 @@ nav > a {
   width: 100%;
   justify-content: center;
   margin-top: 9rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   height: 30rem;
   overflow: hidden;
 }
@@ -495,8 +495,50 @@ input[type="password"] {
 
 /*Footer styling*/
 footer {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 30px;
-  text-align: center;
+  height: 15rem;
   margin-top: auto;
+  background-color: #badfe7;
+  padding: 3rem;
+  justify-content: space-evenly;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  color: rgb(60, 60, 60);
+}
+
+footer h3 {
+  border-bottom: 1px solid #69331a;
+  color: rgb(60, 60, 60);
+}
+
+.footer-socials,
+.footer-about-us,
+.footer-visit-us {
+  width: 20%;
+}
+
+.footer-icons {
+  margin: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+
+.footer-icons:hover {
+  opacity: 0.5;
+}
+
+.footer-copyright {
+  background-color: #badfe7;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: smaller;
+  padding-bottom: 0.5rem;
 }
