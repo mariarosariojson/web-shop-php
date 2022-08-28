@@ -12,6 +12,7 @@ Template::header('MAZA - Products'); ?>
 foreach ($products as $product) : ?>
 
     <div class="products-container">
+
         <div class="product-card">
 
             <div class="product-img">
@@ -34,11 +35,8 @@ foreach ($products as $product) : ?>
                 <input type="hidden" name="product-id" value="<?= $product->id ?>">
                 <input class="buy-btn" type="submit" value="Add to cart">
             </form>
-
         </div>
-
     </div>
-
 <?php
 endforeach;
 
