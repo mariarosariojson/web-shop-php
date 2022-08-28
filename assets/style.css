@@ -449,7 +449,7 @@ nav > a {
 
 /*Update product styling*/
 .col-75 > input[type="submit"] {
-	margin-top: 10px;
+	margin-top: 15px;
 	font-size: 1rem;
 }
 .admin-product-container input,
