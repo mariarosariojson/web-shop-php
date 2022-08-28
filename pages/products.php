@@ -8,10 +8,11 @@ $products = $products_db->get_all();
 
 Template::header('MAZA - Products'); ?>
 <h2 class="sub-header-text">Products</h2>
-<?php
-foreach ($products as $product) : ?>
+<div class="products-container">
 
-    <div class="products-container">
+    <?php
+    foreach ($products as $product) : ?>
+
         <div class="product-card">
 
             <div class="product-img">
@@ -37,9 +38,10 @@ foreach ($products as $product) : ?>
 
         </div>
 
-    </div>
+
+    <?php
+    endforeach; ?>
+</div>
 
 <?php
-endforeach;
-
 Template::footer();
