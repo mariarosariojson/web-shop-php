@@ -390,11 +390,6 @@ nav > a {
 .cart-button:hover {
 	background-color: #451600;
 }
-.cart-total {
-	display: flex;
-	margin-left: auto;
-	padding: 1rem;
-}
 
 /* Admin page styling */
 .product-section {
