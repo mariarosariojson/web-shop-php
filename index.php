@@ -14,11 +14,11 @@ Template::header('MAZA');
 <div class="new-arrivals-img">
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/jacket.jpg" width="100%">
+        <img class="products-img-index" src="assets/uploads/jacket.jpg" width="100%">
     </div>
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/tshirt.jpg" width="100%">
+        <img class="products-img-index" src="assets/uploads/tshirt.jpg" width="100%">
     </div>
 
     <div class="img-small">
@@ -26,7 +26,7 @@ Template::header('MAZA');
     </div>
 
     <div class="img-small">
-        <img class="products-img-index" src="assets/img/pants.jpg" height="100%">
+        <img class="products-img-index" src="assets/uploads/pants.jpg" height="100%">
     </div>
 </div>
 
