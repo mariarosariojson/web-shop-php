@@ -55,7 +55,6 @@ Template::header('MAZA - Cart'); ?>
 
             <?php endforeach ?>
             <br>
-            <p class="cart-total">Total: <?= $product->price ?> kr</p>
             <input class="cart-button" type="submit" value="Place order">
         </form>
     <?php endif ?>

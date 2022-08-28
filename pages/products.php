@@ -8,10 +8,10 @@ $products = $products_db->get_all();
 
 Template::header('MAZA - Products'); ?>
 <h2 class="sub-header-text">Products</h2>
-<?php
-foreach ($products as $product) : ?>
+<div class="products-container">
 
-    <div class="products-container">
+    <?php
+    foreach ($products as $product) : ?>
 
         <div class="product-card">
 
@@ -36,8 +36,11 @@ foreach ($products as $product) : ?>
                 <input class="buy-btn" type="submit" value="Add to cart">
             </form>
         </div>
-    </div>
-<?php
-endforeach;
 
+
+    <?php
+    endforeach; ?>
+</div>
+
+<?php
 Template::footer();

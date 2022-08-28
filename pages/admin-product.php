@@ -60,15 +60,23 @@ if ($product == null) :
                 <div class="col-75">
                     <input type="file" name="image" accept="image/*"><br>
                     <input type="submit" value="Save">
-                    <br>
-                    <form action="/ws/admin-scripts/post-delete-product.php" method="post" enctype="multipart/form-data">
-                        <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
-                        <input type="submit" value="Delete item">
-                    </form>
-
                 </div>
             </div>
         </form>
+        <form action="/ws/admin-scripts/post-delete-product.php" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-25">
+                </div>
+                <div class="col-75">
+                    <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
+                    <input type="submit" value="Delete item">
+                </div>
+            </div>
+
+        </form>
+
+
+
     </div>
 
 <?php
