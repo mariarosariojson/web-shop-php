@@ -240,12 +240,13 @@ nav > a {
 /* Products page styling*/
 .products-container {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	width: 90%;
-	height: fit-content;
-	justify-content: space-around;
-	margin: 4rem;
+	margin: 0 auto;
+	padding: 0 80px;
+	padding-bottom: 50px;
 }
 
 .product-card {
